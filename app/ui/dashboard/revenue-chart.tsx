@@ -63,3 +63,8 @@
 //     </div>
 //   );
 // }
+import { fetchRevenue } from '@/app/lib/data';
+
+export default async function RevenueChart() { // async, hapus props
+  const revenue = await fetchRevenue(); // fetch di dalam komponen
+  // ...

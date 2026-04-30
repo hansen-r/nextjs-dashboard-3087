@@ -56,3 +56,19 @@ export function Card({
     </div>
   );
 }
+import { fetchCardData } from '@/app/lib/data';
+
+export default async function CardWrapper() {
+  const {
+    numberOfInvoices,
+    numberOfCustomers,
+    totalPaidInvoices,
+    totalPendingInvoices,
+  } = await fetchCardData();
+
+  return (
+    <>
+      {/* uncomment semua Card di sini */}
+    </>
+  );
+}
