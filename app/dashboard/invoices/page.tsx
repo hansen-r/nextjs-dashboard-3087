@@ -35,4 +35,4 @@ export default async function Page(props: {
       </div>
     </div>
   );
-}
+} 
